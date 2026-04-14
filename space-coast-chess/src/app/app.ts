@@ -49,7 +49,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
     <footer>
       <p>Space Coast Chess Foundation</p>
-      <p><a href="mailto:spacecoastchessfoundation@hotmail.com">spacecoastchessfoundation&#64;hotmail.com</a></p>
+      <p><a href="mailto:spacecoastchessfoundation@hotmail.com">spacecoastchessfoundation@hotmail.com</a></p>
       <p>©2026 by Space Coast Chess Foundation.</p>
     </footer>
   `,
@@ -58,7 +58,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
     :host {
       width: 100%;
-      background-color: #F4F2EC
+      background-color: #F4F2EC;
+      color: black;
     }
 
     .navbar {
@@ -66,14 +67,14 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
       align-items: center;
       justify-content: space-between;
       padding: 1.5rem 2rem;
-      background: #f8f9fa;
-      color: #212529;
+      background-color: #F4F2EC;
+      color: black;
+      text-color: black;
       border-bottom: 1px solid #e9ecef;
       flex-wrap: wrap;
       gap: 1rem;
     }
     .navbar-brand a {
-      color: white;
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: bold;
@@ -85,7 +86,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
       flex-wrap: wrap;
     }
     nav a, nav span {
-      color: white;
       text-decoration: none;
       cursor: pointer;
       font-size: 0.95rem;
@@ -100,6 +100,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
       top: 100%;
       left: 0;
       background: #1a1a2e;
+      color: white;
       border: 1px solid #444;
       padding: 0.5rem 0;
       min-width: 220px;
@@ -130,8 +131,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1a1a2e;
-      color: #ccc;
+      background-color: #F4F2EC;
+      color: black;
       margin-top: 3rem;
       line-height: 2;
     }

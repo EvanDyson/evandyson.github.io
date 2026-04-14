@@ -6,11 +6,6 @@ import { NgFor } from '@angular/common';
   selector: 'app-home',
   imports: [RouterLink, NgFor],
   template: `
-    <section class="hero">
-      <h1>Welcome to the Space Coast Chess Foundation</h1>
-      <p>Serving the Brevard County chess community</p>
-    </section>
-
     <section class="events-grid">
       <a *ngFor="let card of eventCards" [routerLink]="card.link" class="event-card">
         <img [src]="card.image" [alt]="card.alt" />
@@ -30,14 +25,6 @@ import { NgFor } from '@angular/common';
     </section>
   `,
   styles: `
-    .hero {
-      text-align: center;
-      padding: 3rem 2rem;
-      background: #f5f5f5;
-    }
-    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .hero p { color: #555; }
-
     .events-grid {
       display: flex;
       flex-wrap: wrap;
