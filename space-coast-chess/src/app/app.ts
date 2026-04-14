@@ -56,13 +56,19 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   styles: `
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    :host {
+      width: 100%;
+      background-color: #F4F2EC
+    }
+
     .navbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 2rem;
-      background: #1a1a2e;
-      color: white;
+      padding: 1.5rem 2rem;
+      background: #f8f9fa;
+      color: #212529;
+      border-bottom: 1px solid #e9ecef;
       flex-wrap: wrap;
       gap: 1rem;
     }
