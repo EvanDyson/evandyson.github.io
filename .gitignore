@@ -1,28 +1,43 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
+# =========================
+# Analog / Node
+# =========================
+space-coast-chess/node_modules/
+space-coast-chess/dist/
+space-coast-chess/.analog/
+space-coast-chess/.nitro/
 
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
-
+# =========================
 # Environment files
-/.env
+# =========================
+space-coast-chess/.env
+space-coast-chess/.env.local
+space-coast-chess/.env.*.local
 
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
-
+# =========================
 # Logs
+# =========================
+logs/
+*.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# =========================
+# GitHub Actions cache
+# =========================
+.cache/
