@@ -26,7 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     :host {
       display: flex;
       flex-direction: column;
-      min-height: 100%;
+      min-height: 100vh;
       background-color: #F4F2EC;
       color: black;
     }

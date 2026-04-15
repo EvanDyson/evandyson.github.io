@@ -20,7 +20,7 @@ import { RouterLink } from '@angular/router';
         Tournament Results
       </a>
       <a
-        routerLink="/events/summer-chess-camp"
+        routerLink="/events/event-rules"
       >
         Tournament Rules
       </a>
@@ -28,6 +28,11 @@ import { RouterLink } from '@angular/router';
         routerLink="/info/contact-us"
       >
         Contact Us
+      </a>
+      <a
+        routerLink="/info/about-us"
+      >
+        About Us
       </a>
       <hr style="width: 30%;" />
     </section>
@@ -149,28 +154,28 @@ import { RouterLink } from '@angular/router';
 export class HomePageComponent {
   eventCards = [
     {
-      image: '/images/space-coast-open.jpg',
+      image: '/images/home-page/space-coast-open.jpg',
       alt: 'Space Coast Open',
       title: '2026 Space Coast Open',
-      link: '/event/spacecoastopen'
+      link: '/events/spacecoastopen'
     },
     {
-      image: '/images/florida-state-champ.png',
+      image: '/images/home-page/florida-state-champ.png',
       alt: 'Florida State Championship',
       title: '2026 Harvey Lerman Florida State Championship',
-      link: '/event/floridastatechampionship'
+      link: '/events/floridastatechampionship'
     },
     {
-      image: '/images/brevard-monthly.jpg',
+      image: '/images/home-page/brevard-monthly.jpg',
       alt: 'Brevard Monthly Events',
       title: 'Brevard Monthly Events',
-      link: '/event/upcoming-events'
+      link: '/events/upcoming-events'
     },
     {
-      image: '/images/summer-chess-camp.jpg',
+      image: '/images/home-page/summer-chess-camp.jpg',
       alt: '2026 Summer Chess Camp',
       title: '2026 Summer Chess Camp',
-      link: '/event/summer-chess-camp'
+      link: '/events/summer-chess-camp'
     }
   ];
 
