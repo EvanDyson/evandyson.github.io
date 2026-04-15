@@ -17,10 +17,6 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: [`
-    :host {
-      display: block;
-    }
-
     .contact-card {
       display: flex;
       flex-direction: column;
