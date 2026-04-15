@@ -45,3 +45,19 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/*
+New Font
+*/
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+.italic {
+  font-style: italic;
+}
+.less-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: bold;
+}
