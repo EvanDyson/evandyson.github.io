@@ -73,6 +73,7 @@ interface NavItem {
       font-size: 2.5em;
       font-weight: 500;
       color: inherit;
+      text-align: center;
     }
 
     nav {
@@ -156,6 +157,7 @@ interface NavItem {
 
       nav.open {
         display: flex;
+        align-items: center;
       }
 
       .dropdown-menu {
