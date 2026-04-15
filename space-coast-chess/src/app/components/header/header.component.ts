@@ -186,13 +186,13 @@ export class HeaderComponent {
     {
       label: 'Events',
       children: [
-        { label: 'Space Coast Open', link: '/event/spacecoastopen' },
-        { label: 'Florida State Championship', link: '/event/floridastatechampionship' },
-        { label: 'Summer Chess Camp', link: '/event/summer-chess-camp' },
-        { label: 'Upcoming Events', link: '/event/upcoming-events' },
-        { label: 'Completed Events', link: '/event/completed-events' },
-        { label: 'Tournament Results', link: '/event/tournament-results' },
-        { label: 'Event Rules & Policies', link: '/event/event-rules' }
+        { label: 'Space Coast Open', link: '/events/spacecoastopen' },
+        { label: 'Florida State Championship', link: '/events/floridastatechampionship' },
+        { label: 'Summer Chess Camp', link: '/events/summer-chess-camp' },
+        { label: 'Upcoming Events', link: '/events/upcoming-events' },
+        { label: 'Completed Events', link: '/events/completed-events' },
+        { label: 'Tournament Results', link: '/events/tournament-results' },
+        { label: 'Event Rules & Policies', link: '/events/event-rules' }
       ]
     },
     {
@@ -210,9 +210,9 @@ export class HeaderComponent {
     {
       label: 'Contact & About',
       children: [
-        { label: 'Contact Us', link: '/contact-us' },
-        { label: 'About Us', link: '/about-us' },
-        { label: 'Board Members', link: '/board-members' }
+        { label: 'Contact Us', link: '/info/contact-us' },
+        { label: 'About Us', link: '/info/about-us' },
+        { label: 'Board Members', link: '/info/board-members' }
       ]
     }
   ];

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   standalone: true,
   template: `
-    <div class="contact-card">
+    <section class="contact-card">
       <h1 class="fraunces">Contact Us</h1>
       <p class="intro">
         Please feel free to contact us at email and phone mentioned below,
@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
       <a class="contact-link" href="tel:16168811094">
         616-881-1094
       </a>
-    </div>
+    </section>
   `,
   styles: [`
     .contact-card {
@@ -24,6 +24,12 @@ import { Component } from '@angular/core';
       margin-right: auto;
       align-items: center;
       gap: 1em;
+      max-width: 70vw;
+      border-radius: 12px;
+      background: #dfdbcf;
+      border: 1px solid #d3cec0;
+      padding: 2rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
