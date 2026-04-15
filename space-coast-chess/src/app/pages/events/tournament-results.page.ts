@@ -19,10 +19,6 @@ import { Component } from '@angular/core';
     </section>
   `,
   styles: [`
-    :host {
-      display: block;
-    }
-
     .results-card {
       display: flex;
       flex-direction: column;
@@ -36,7 +32,6 @@ import { Component } from '@angular/core';
       background: #dfdbcf;
       border: 1px solid #d3cec0;
       border-radius: 12px;
-      padding: 2rem;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 

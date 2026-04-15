@@ -28,7 +28,7 @@ import { Component } from '@angular/core';
       border-radius: 12px;
       background: #dfdbcf;
       border: 1px solid #d3cec0;
-      padding: 2rem;
+      padding: 3rem 1.5rem;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 
