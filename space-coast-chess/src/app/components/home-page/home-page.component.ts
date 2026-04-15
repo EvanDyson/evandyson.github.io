@@ -45,7 +45,7 @@ import { RouterLink } from '@angular/router';
     <section class="events-grid">
       @for (card of eventCards; track card) {
         <a [routerLink]="card.link" class="event-card">
-          <img [src]="card.image" [alt]="card.alt" />
+          <img [src]="card.image" [alt]="card.alt" class="event-cards" />
           <p>{{ card.title }}</p>
         </a>
       }
@@ -79,6 +79,10 @@ import { RouterLink } from '@angular/router';
       justify-content: center;
       gap: 1.5em;
       padding: 2em;
+    }
+
+    .event-cards {
+      border-radius: 50%;
     }
 
     .event-card {
