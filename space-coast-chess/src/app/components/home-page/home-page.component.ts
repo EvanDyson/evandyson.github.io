@@ -34,6 +34,11 @@ import { RouterLink } from '@angular/router';
       >
         About Us
       </a>
+      <a
+        routerLink="/resources-coaching"
+      >
+        Resources & Coaching (still needs slight clean up)
+      </a>
       <hr style="width: 30%;" />
     </section>
 
