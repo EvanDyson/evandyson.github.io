@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
+interface NavItem {
+  label: string;
+  link?: string;
+  children?: NavItem[];
+}
+
 @Component({
   selector: 'sccf-header',
   standalone: true,
@@ -10,64 +16,63 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       <div class="navbar-brand fraunces">
         <a routerLink="/">Space Coast Chess Foundation</a>
       </div>
-
+      <hr class="line" />
       <button class="menu-toggle" (click)="menuOpen = !menuOpen">☰</button>
-
-      <nav [class.open]="menuOpen">
-        <a
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          (click)="closeMenu()"
-        >
-          Home
-        </a>
-
-        <div class="dropdown">
-          <span>Events ▾</span>
-          <div class="dropdown-menu">
-            <a routerLink="/event/spacecoastopen" (click)="closeMenu()">Space Coast Open</a>
-            <a routerLink="/event/floridastatechampionship" (click)="closeMenu()">Florida State Championship</a>
-            <a routerLink="/event/summer-chess-camp" (click)="closeMenu()">Summer Chess Camp</a>
-            <a routerLink="/event/upcoming-events" (click)="closeMenu()">Upcoming Events</a>
-            <a routerLink="/event/completed-events" (click)="closeMenu()">Completed Events</a>
-            <a routerLink="/event/tournament-results" (click)="closeMenu()">Tournament Results</a>
-            <a routerLink="/event/event-rules" (click)="closeMenu()">Event Rules & Policies</a>
-          </div>
-        </div>
-
-        <a routerLink="/resources-coaching" (click)="closeMenu()">Resources & Coaching</a>
-        <a routerLink="/wheretoplaychess" (click)="closeMenu()">Where To Play Chess</a>
-        <a routerLink="/news" (click)="closeMenu()">News & Blog</a>
-
-        <div class="dropdown">
-          <span>Contact & About ▾</span>
-          <div class="dropdown-menu">
-            <a routerLink="/contactus" (click)="closeMenu()">Contact Us</a>
-            <a routerLink="/aboutus" (click)="closeMenu()">About Us</a>
-            <a routerLink="/boardmembers" (click)="closeMenu()">Board Members</a>
-          </div>
-        </div>
+      <nav class="fraunces" [class.open]="menuOpen">
+        @for (item of navItems; track item) {
+          <ng-container>
+            @if (item.children) {
+              <div class="dropdown">
+                <span>{{ item.label }} ▾</span>
+                <div class="dropdown-menu">
+                  @for (child of item.children; track child) {
+                    <a
+                      [routerLink]="child.link"
+                      (click)="closeMenu()"
+                    >
+                      {{ child.label }}
+                    </a>
+                  }
+                </div>
+              </div>
+            }
+            @else if (!item.children) {
+              <a
+                [routerLink]="item.link"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: item.link === '/' }"
+                (click)="closeMenu()"
+              >
+                {{ item.label }}
+              </a>
+            }
+          </ng-container>
+        }
       </nav>
+      <hr class="line" />
     </header>
   `,
   styles: [`
     .navbar {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
       padding: 1.5rem 2rem;
       background-color: #F4F2EC;
       color: black;
-      border-bottom: 1px solid #e9ecef;
       flex-wrap: wrap;
       gap: 1rem;
     }
 
+    .line {
+      width: 95vw;
+    }
+
     .navbar-brand a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
+      font-style: italic;
+      font-size: 2.5em;
+      font-weight: 500;
       color: inherit;
     }
 
@@ -105,13 +110,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       position: absolute;
       top: 100%;
       left: 0;
-      background: #1a1a2e;
-      color: white;
+      background: #dfdbcf;
+      color: black;
       border: 1px solid #444;
       padding: 0.5rem 0;
       min-width: 220px;
       z-index: 100;
       flex-direction: column;
+      border-radius: 5px;
     }
 
     .dropdown:hover .dropdown-menu {
@@ -122,11 +128,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       padding: 0.4rem 1rem;
       display: block;
       white-space: nowrap;
-      color: white;
     }
 
     .dropdown-menu a:hover {
-      background: #333;
+      background: lightgray;
     }
 
     .menu-toggle {
@@ -172,4 +177,43 @@ export class HeaderComponent {
   closeMenu(): void {
     this.menuOpen = false;
   }
+
+  navItems: NavItem[] = [
+    {
+      label: 'Home',
+      link: '/'
+    },
+    {
+      label: 'Events',
+      children: [
+        { label: 'Space Coast Open', link: '/event/spacecoastopen' },
+        { label: 'Florida State Championship', link: '/event/floridastatechampionship' },
+        { label: 'Summer Chess Camp', link: '/event/summer-chess-camp' },
+        { label: 'Upcoming Events', link: '/event/upcoming-events' },
+        { label: 'Completed Events', link: '/event/completed-events' },
+        { label: 'Tournament Results', link: '/event/tournament-results' },
+        { label: 'Event Rules & Policies', link: '/event/event-rules' }
+      ]
+    },
+    {
+      label: 'Resources & Coaching',
+      link: '/resources-coaching'
+    },
+    {
+      label: 'Where To Play Chess',
+      link: '/where-to-play-chess'
+    },
+    {
+      label: 'News & Blog',
+      link: '/news'
+    },
+    {
+      label: 'Contact & About',
+      children: [
+        { label: 'Contact Us', link: '/contact-us' },
+        { label: 'About Us', link: '/about-us' },
+        { label: 'Board Members', link: '/board-members' }
+      ]
+    }
+  ];
 }

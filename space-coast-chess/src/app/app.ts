@@ -32,7 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     }
 
     main {
-      min-height: calc(100vh - 120px); /* header + footer space */
+      flex: 1;
     }
   `]
 })
