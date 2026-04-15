@@ -58,11 +58,11 @@ interface NavItem {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 1.5rem 2rem;
+      padding: 1.5em 2em;
       background-color: #F4F2EC;
       color: black;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1em;
     }
 
     .line {
@@ -77,7 +77,7 @@ interface NavItem {
 
     nav {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.5em;
       align-items: center;
       flex-wrap: wrap;
     }
@@ -86,7 +86,7 @@ interface NavItem {
     nav span {
       text-decoration: none;
       cursor: pointer;
-      font-size: 0.95rem;
+      font-size: 0.95em;
       color: inherit;
     }
 
@@ -112,7 +112,7 @@ interface NavItem {
       background: #dfdbcf;
       color: black;
       border: 1px solid #444;
-      padding: 0.5rem 0;
+      padding: 0.5em 0;
       min-width: 220px;
       z-index: 100;
       flex-direction: column;
@@ -124,7 +124,7 @@ interface NavItem {
     }
 
     .dropdown-menu a {
-      padding: 0.4rem 1rem;
+      padding: 0.4em 1em;
       display: block;
       white-space: nowrap;
     }
@@ -138,7 +138,7 @@ interface NavItem {
       background: none;
       border: none;
       color: black;
-      font-size: 1.5rem;
+      font-size: 1.5em;
       cursor: pointer;
     }
 
@@ -161,7 +161,7 @@ interface NavItem {
       .dropdown-menu {
         position: static;
         border: none;
-        padding-left: 1rem;
+        padding-left: 1em;
       }
 
       .dropdown:hover .dropdown-menu {

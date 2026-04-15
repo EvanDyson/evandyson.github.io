@@ -42,26 +42,26 @@ import { Component } from '@angular/core';
       background: #dfdbcf;
       border: 1px solid #d3cec0;
       border-radius: 12px;
-      padding: 3rem 1.5rem;
+      padding: 3em 1.5em;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
-      margin: 0 0 1rem;
-      font-size: 2rem;
+      margin: 0 0 1em;
+      font-size: 2em;
       color: #1f1f1f;
     }
 
     .intro {
-      margin: 0 0 1rem;
-      font-size: 1rem;
+      margin: 0 0 1em;
+      font-size: 1em;
       line-height: 1.6;
       color: #333;
     }
 
     .dates {
-      margin: 0 0 1.5rem;
-      font-size: 1rem;
+      margin: 0 0 1.5em;
+      font-size: 1em;
       color: #333;
     }
 
@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
       display: inline-block;
       color: #1a1a2e;
       text-decoration: none;
-      font-size: 1.05rem;
+      font-size: 1.05em;
       font-weight: 600;
       line-height: 1.5;
     }
@@ -80,15 +80,15 @@ import { Component } from '@angular/core';
 
     @media (max-width: 768px) {
       .camp-page {
-        padding: 2rem 1rem;
+        padding: 2em 1em;
       }
 
       .camp-card {
-        padding: 1.5rem;
+        padding: 1.5em;
       }
 
       h1 {
-        font-size: 1.75rem;
+        font-size: 1.75em;
       }
     }
   `]

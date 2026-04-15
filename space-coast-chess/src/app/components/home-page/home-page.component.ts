@@ -6,6 +6,30 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
+    <section class="finished-pages">
+      <p>Finished Pages</p>
+      <a
+        routerLink="/events/summer-chess-camp"
+      >
+        Summer chess camp
+      </a>
+      <a
+        routerLink="/events/tournament-results"
+      >
+        Tournament Results
+      </a>
+      <a
+        routerLink="/events/summer-chess-camp"
+      >
+        Tournament Rules
+      </a>
+      <a
+        routerLink="/info/contact-us"
+      >
+        Contact Us
+      </a>
+    </section>
+
     <section class="events-grid">
       @for (card of eventCards; track card) {
         <a [routerLink]="card.link" class="event-card">
@@ -29,12 +53,20 @@ import { RouterLink } from '@angular/router';
     </section>
   `,
   styles: [`
+    .finished-pages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      padding: 2em;
+    }
+
     .events-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
+      gap: 1.5em;
+      padding: 2em;
     }
 
     .event-card {
@@ -52,7 +84,7 @@ import { RouterLink } from '@angular/router';
     }
 
     .event-card p {
-      margin-top: 0.5rem;
+      margin-top: 0.5em;
       font-weight: bold;
     }
 
@@ -61,26 +93,26 @@ import { RouterLink } from '@angular/router';
     }
 
     .blog-section {
-      padding: 2rem;
+      padding: 2em;
       max-width: 900px;
       margin: 0 auto;
     }
 
     .blog-section h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     .blog-grid {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1em;
     }
 
     .blog-card {
       text-decoration: none;
       color: inherit;
       border: 1px solid #ddd;
-      padding: 1rem;
+      padding: 1em;
       border-radius: 6px;
     }
 
@@ -89,19 +121,19 @@ import { RouterLink } from '@angular/router';
     }
 
     .category {
-      font-size: 0.8rem;
+      font-size: 0.8em;
       color: #888;
       text-transform: uppercase;
     }
 
     .blog-card h3 {
-      margin: 0.25rem 0 0;
-      font-size: 1rem;
+      margin: 0.25em 0 0;
+      font-size: 1em;
     }
 
     .view-all {
       display: inline-block;
-      margin-top: 1.5rem;
+      margin-top: 1.5em;
       color: #1a1a2e;
       font-weight: bold;
       text-decoration: none;
