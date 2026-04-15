@@ -45,3 +45,10 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/*
+New Font
+*/
+.fraunces {
+  font-family: "Fraunces", serif;
+}
