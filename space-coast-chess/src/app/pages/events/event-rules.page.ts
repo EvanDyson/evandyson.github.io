@@ -42,7 +42,7 @@ import { Component } from '@angular/core';
       margin-right: auto;
       align-items: center;
       gap: 1em;
-      max-width: 70vw;
+      max-width: 70%;
       border-radius: 12px;
       background: #dfdbcf;
       border: 1px solid #d3cec0;
@@ -85,7 +85,7 @@ import { Component } from '@angular/core';
 
     @media (max-width: 768px) {
       .contact-card {
-        max-width: calc(100vw - 2em);
+        max-width: calc(100% - 2em);
         padding: 1.5em;
       }
 

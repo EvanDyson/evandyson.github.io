@@ -66,7 +66,7 @@ interface NavItem {
     }
 
     .line {
-      width: 95vw;
+      width: 95%;
     }
 
     .navbar-brand a {

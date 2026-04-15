@@ -28,7 +28,7 @@ import { Component } from '@angular/core';
       align-items: center;
       padding: 3em 1.5em;
       width: 100%;
-      max-width: 75vw;
+      max-width: 75%;
       background: #dfdbcf;
       border: 1px solid #d3cec0;
       border-radius: 12px;

@@ -38,7 +38,7 @@ import { Component } from '@angular/core';
       margin-right: auto;
       align-items: center;
       gap: 1em;
-      max-width: 70vw;
+      max-width: 70%;
       background: #dfdbcf;
       border: 1px solid #d3cec0;
       border-radius: 12px;

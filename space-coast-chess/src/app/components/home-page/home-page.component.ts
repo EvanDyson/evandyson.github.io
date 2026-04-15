@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   template: `
     <section class="finished-pages">
       <p>Finished Pages</p>
-      <hr style="width: 30vw;" />
+      <hr style="width: 30%;" />
       <a
         routerLink="/events/summer-chess-camp"
       >
@@ -29,7 +29,7 @@ import { RouterLink } from '@angular/router';
       >
         Contact Us
       </a>
-      <hr style="width: 30vw;" />
+      <hr style="width: 30%;" />
     </section>
 
     <section class="events-grid">
