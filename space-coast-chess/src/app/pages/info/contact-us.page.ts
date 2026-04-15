@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <section class="contact-card">
-      <h1 class="fraunces">Contact Us</h1>
+      <h1 class="fraunces italic less-bold">Contact Us</h1>
       <p class="intro">
         Please feel free to contact us at email and phone mentioned below,
       </p>

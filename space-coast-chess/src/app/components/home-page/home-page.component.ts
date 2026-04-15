@@ -1,26 +1,29 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'sccf-home-page',
   standalone: true,
-  imports: [RouterLink, NgFor],
+  imports: [RouterLink],
   template: `
     <section class="events-grid">
-      <a *ngFor="let card of eventCards" [routerLink]="card.link" class="event-card">
-        <img [src]="card.image" [alt]="card.alt" />
-        <p>{{ card.title }}</p>
-      </a>
+      @for (card of eventCards; track card) {
+        <a [routerLink]="card.link" class="event-card">
+          <img [src]="card.image" [alt]="card.alt" />
+          <p>{{ card.title }}</p>
+        </a>
+      }
     </section>
 
     <section class="blog-section">
       <h2>Recent News & Blog Posts</h2>
       <div class="blog-grid">
-        <a *ngFor="let post of blogPosts" [routerLink]="post.link" class="blog-card">
-          <span class="category">{{ post.category }}</span>
-          <h3>{{ post.title }}</h3>
-        </a>
+        @for (post of blogPosts; track post) {
+          <a [routerLink]="post.link" class="blog-card">
+            <span class="category">{{ post.category }}</span>
+            <h3>{{ post.title }}</h3>
+          </a>
+        }
       </div>
       <a routerLink="/news" class="view-all">View All Posts →</a>
     </section>

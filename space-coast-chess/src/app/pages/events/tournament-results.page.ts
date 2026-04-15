@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <section class="results-card">
-      <h1 class="fraunces">Tournament Results</h1>
+      <h1 class="fraunces italic less-bold">Tournament Results</h1>
       <p class="intro">
         View tournament results from all previous Space Coast Chess Foundation events.
       </p>

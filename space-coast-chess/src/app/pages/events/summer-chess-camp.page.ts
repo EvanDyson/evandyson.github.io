@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <section class="camp-card">
-      <h1 class="fraunces">2026 Kids Summer Chess Camp</h1>
+      <h1 class="fraunces italic less-bold">2026 Kids Summer Chess Camp</h1>
       <p class="intro">
         Offering full day and half day options.
       </p>

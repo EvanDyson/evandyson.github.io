@@ -13,7 +13,7 @@ interface NavItem {
   imports: [RouterLink, RouterLinkActive],
   template: `
     <header class="navbar">
-      <div class="navbar-brand fraunces">
+      <div class="navbar-brand fraunces italic">
         <a routerLink="/">Space Coast Chess Foundation</a>
       </div>
       <hr class="line" />
@@ -70,7 +70,6 @@ interface NavItem {
     }
 
     .navbar-brand a {
-      font-style: italic;
       font-size: 2.5em;
       font-weight: 500;
       color: inherit;

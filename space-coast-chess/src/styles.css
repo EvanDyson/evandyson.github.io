@@ -52,3 +52,12 @@ New Font
 .fraunces {
   font-family: "Fraunces", serif;
 }
+.italic {
+  font-style: italic;
+}
+.less-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: bold;
+}

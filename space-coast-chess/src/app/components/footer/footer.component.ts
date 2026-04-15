@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <footer class="footer">
-      <p class="title fraunces">Space Coast Chess Foundation</p>
+      <p class="title fraunces italic">Space Coast Chess Foundation</p>
       <p>
         <a href="mailto:spacecoastchessfoundation@hotmail.com">
           spacecoastchessfoundation@hotmail.com
@@ -24,7 +24,6 @@ import { Component } from '@angular/core';
 
       & .title {
         font-size: x-large;
-        font-style: italic;
       }
     }
     
