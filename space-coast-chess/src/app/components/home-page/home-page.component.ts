@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <section class="finished-pages">
-      <p>Finished Pages</p>
+      <span>Finished Pages, Click to go to</span>
       <hr style="width: 30%;" />
       <a
         routerLink="/events/summer-chess-camp"
@@ -37,8 +37,22 @@ import { RouterLink } from '@angular/router';
       <a
         routerLink="/resources-coaching"
       >
-        Resources & Coaching (still needs slight clean up)
+        Resources & Coaching
       </a>
+      <a
+        routerLink="/where-to-play-chess"
+      >
+        Where to play chess
+      </a>
+      <hr style="width: 30%;" />
+      <span>TO DO</span>
+      <hr style="width: 30%;" />
+        <span>Space Coast Open</span>
+        <span>Florida State Championship</span>
+        <span>Upcoming Events</span>
+        <span>Completed Events</span>
+        <span>Board Members</span>
+        <span>News & Blog</span>
       <hr style="width: 30%;" />
     </section>
 
