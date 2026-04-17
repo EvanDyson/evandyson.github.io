@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'sccf-home-page',
   standalone: true,
   imports: [RouterLink],
   template: `
@@ -174,7 +173,7 @@ import { RouterLink } from '@angular/router';
     }
   `]
 })
-export class HomePageComponent {
+export default class HomePageComponent {
   eventCards = [
     {
       image: '/images/home-page/space-coast-open.jpg',
