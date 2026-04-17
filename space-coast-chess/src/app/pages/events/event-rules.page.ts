@@ -115,7 +115,7 @@ export default class EventRulesPageComponent {
     `7. In case of a problem, stop the clock and see TD. If the TD feels clocks were stopped without good reason, a penalty is possible.`,
 
     `8. You may be required to show your social security ID and picture ID, and to complete IRS Form 
-    W-9 to receive a prize. Non-resident foreign players must have 30% of any prize withheld for emittance 
+    W-9 to receive a prize. Non-resident foreign players must have 30% of any prize withheld for remittance 
     to the IRS. Prizes will be paid only to the player winning the prize regardless of age or nationality.`,
 
     `9. FAIR PLAY. During play, you may not possess cellphones, smart watches, or other devices capable of 
@@ -154,7 +154,7 @@ export default class EventRulesPageComponent {
     
     `5. In order to comply with the SCCF's contract with the host Hotel, no food or outside beverages 
     (except water) are allowed in the playing hall or any of the other meeting rooms used for the chess 
-    tournament and side activities. For water or other beverages provided by the organizer, please emove 
-    your drink cups when your game ends so the playing hall emains tidy for the next round.`
+    tournament and side activities. For water or other beverages provided by the organizer, please remove 
+    your drink cups when your game ends so the playing hall remains tidy for the next round.`
   ];
 }

@@ -6,69 +6,12 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <section class="finished-pages">
-      <span>Finished Pages, Click to go to</span>
-      <hr style="width: 30%;" />
-      <a
-        routerLink="/events/summer-chess-camp"
-      >
-        Summer chess camp
-      </a>
-      <a
-        routerLink="/events/tournament-results"
-      >
-        Tournament Results
-      </a>
-      <a
-        routerLink="/events/event-rules"
-      >
-        Tournament Rules
-      </a>
-      <a
-        routerLink="/info/contact-us"
-      >
-        Contact Us
-      </a>
-      <a
-        routerLink="/info/about-us"
-      >
-        About Us
-      </a>
-      <a
-        routerLink="/resources-coaching"
-      >
-        Resources & Coaching
-      </a>
-      <a
-        routerLink="/where-to-play-chess"
-      >
-        Where to play chess
-      </a>
-      <a
-        routerLink="/info/board-members"
-      >
-        Board Members
-      </a>
-      <a
-        routerLink="/events"
-      >
-        Events
-      </a>
-      <a
-        routerLink="/events/upcoming-events"
-      >
-        Upcoming Events
-      </a>
-      <a
-        routerLink="/events/completed-events"
-      >
-        Completed Events
-      </a>
-      <hr style="width: 30%;" />
-      <span>TO DO</span>
+      <span>All pages are finished except...</span>
       <hr style="width: 30%;" />
         <span>Space Coast Open</span>
         <span>Florida State Championship</span>
         <span>News & Blog</span>
+        <span>All Blog Posts (77/77)</span>
       <hr style="width: 30%;" />
     </section>
 
