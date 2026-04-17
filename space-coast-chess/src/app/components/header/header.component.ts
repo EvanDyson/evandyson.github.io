@@ -73,7 +73,17 @@ interface BreadcrumbItem {
           <ng-container>
             @if (item.children) {
               <div class="dropdown">
-                <span>{{ item.label }} ▾</span>
+                @if (item.link) {
+                  <a
+                    [routerLink]="item.link"
+                    (click)="closeMenu()"
+                  >
+                    {{ item.label }} ▾
+                  </a>
+                } 
+                @else {
+                  <span>{{ item.label }} ▾</span>
+                }
                 <div class="dropdown-menu">
                   @for (child of item.children; track child) {
                     <a
@@ -127,7 +137,10 @@ interface BreadcrumbItem {
     }
 
     .mobile-btn-container {
-      display: contents;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      order: 4;
     }
 
     .path {
@@ -177,6 +190,12 @@ interface BreadcrumbItem {
     .line {
       width: 95%;
     }
+    .line:first-of-type {
+      order: 2;
+    }
+    .line:last-of-type {
+      order: 5;
+    }
 
     .navbar-brand a {
       font-size: 2.5em;
@@ -186,11 +205,16 @@ interface BreadcrumbItem {
       text-decoration: none;
     }
 
+    .navbar-brand {
+      order: 1;
+    }
+
     nav {
       display: flex;
       gap: 1.5em;
       align-items: center;
       flex-wrap: wrap;
+      order: 3;
     }
 
     nav a,
@@ -262,6 +286,7 @@ interface BreadcrumbItem {
         width: 100%;
         min-height: 40px;
         padding-right: 2.5rem;
+        order: 3;
       }
 
       .menu-toggle {
@@ -287,6 +312,7 @@ interface BreadcrumbItem {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        order: 4;
       }
 
       nav.open {
@@ -307,6 +333,13 @@ interface BreadcrumbItem {
       .navbar-brand {
         text-align: center;
         font-size: 0.7em;
+        order: 1;
+      }
+      .line:first-of-type {
+        order: 2;
+      }
+      .line:last-of-type {
+        order: 5;
       }
     }
   `]
@@ -395,10 +428,11 @@ export class HeaderComponent {
     },
     {
       label: 'Events',
+      link: '/events',
       children: [
         { label: 'Space Coast Open', link: '/events/spacecoastopen' },
         { label: 'Florida State Championship', link: '/events/floridastatechampionship' },
-        { label: 'Summer Chess Camp', link: '/events/summer-chess-camp' },
+        { label: 'Kids Summer Chess Camp', link: '/events/summer-chess-camp' },
         { label: 'Upcoming Events', link: '/events/upcoming-events' },
         { label: 'Completed Events', link: '/events/completed-events' },
         { label: 'Tournament Results', link: '/events/tournament-results' },

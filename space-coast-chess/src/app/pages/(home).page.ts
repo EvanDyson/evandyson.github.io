@@ -48,6 +48,11 @@ import { RouterLink } from '@angular/router';
       >
         Board Members
       </a>
+      <a
+        routerLink="/events"
+      >
+        Events
+      </a>
       <hr style="width: 30%;" />
       <span>TO DO</span>
       <hr style="width: 30%;" />
