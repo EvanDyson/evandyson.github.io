@@ -44,6 +44,11 @@ import { RouterLink } from '@angular/router';
       >
         Where to play chess
       </a>
+      <a
+        routerLink="/info/board-members"
+      >
+        Board Members
+      </a>
       <hr style="width: 30%;" />
       <span>TO DO</span>
       <hr style="width: 30%;" />
@@ -51,7 +56,6 @@ import { RouterLink } from '@angular/router';
         <span>Florida State Championship</span>
         <span>Upcoming Events</span>
         <span>Completed Events</span>
-        <span>Board Members</span>
         <span>News & Blog</span>
       <hr style="width: 30%;" />
     </section>
