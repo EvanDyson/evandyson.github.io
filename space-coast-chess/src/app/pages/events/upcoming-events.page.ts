@@ -11,11 +11,6 @@ interface EventItem {
   links?: EventLink[];
 }
 
-interface SectionDetail {
-  heading: string;
-  items: string[];
-}
-
 @Component({
   standalone: true,
   imports: [],
@@ -43,12 +38,7 @@ interface SectionDetail {
                       target="_blank"
                       rel="noreferrer"
                       class="bold"
-                    >
-                      {{ link.label }}
-                    </a>
-                    @if (!last) {
-                      <span>, </span>
-                    }
+                    >{{link.label}}</a>@if (!last) {<span>, </span>}
                   }
                 </span>
               }
@@ -73,12 +63,7 @@ interface SectionDetail {
                       target="_blank"
                       rel="noreferrer"
                       class="bold"
-                    >
-                      {{ link.label }}
-                    </a>
-                    @if (!last) {
-                      <span>, </span>
-                    }
+                    >{{link.label}}</a>@if (!last) {<span>, </span>}
                   }
                 </span>
               }
@@ -103,12 +88,7 @@ interface SectionDetail {
                       target="_blank"
                       rel="noreferrer"
                       class="bold"
-                    >
-                      {{ link.label }}
-                    </a>
-                    @if (!last) {
-                      <span>, </span>
-                    }
+                    >{{link.label}}</a>@if (!last) {<span>, </span>}
                   }
                 </span>
               }
@@ -186,8 +166,16 @@ interface SectionDetail {
       <section class="section-block">
         <h2 class="section-title bold">More Info and Additional Event Rules</h2>
         <ul class="event-list">
+          <li>
+            See the
+            <a href="/events/event-rules" class="bold underline">
+              Space Coast Chess Foundation (SCCF) Rules
+            </a>
+            for additional rules applicable to this event.
+          </li>
+
           @for (item of additionalInfoItems; track item) {
-            <li [innerHTML]="item"></li>
+            <li>{{ item }}</li>
           }
         </ul>
       </section>
@@ -199,8 +187,18 @@ interface SectionDetail {
             <article class="contact-item">
               <h3 class="subsection-title">{{ contact.role }}</h3>
               <p class="intro"><strong>{{ contact.name }}</strong></p>
-              <p class="intro">Email: <a [href]="'mailto:' + contact.email" class="bold">{{ contact.email }}</a></p>
-              <p class="intro">Phone: <a [href]="'tel:' + contact.phone" class="bold">{{ contact.phone }}</a></p>
+              <p class="intro">
+                Email:
+                <a [href]="'mailto:' + contact.email" class="bold">
+                  {{ contact.email }}
+                </a>
+              </p>
+              <p class="intro">
+                Phone:
+                <a [href]="'tel:' + contact.phone" class="bold">
+                  {{ contact.phone }}
+                </a>
+              </p>
             </article>
           }
         </div>
@@ -339,11 +337,11 @@ export default class UpcomingEventsPageComponent {
       links: [
         {
           label: 'Register',
-          href: 'https://www.chessregister.com/event/space-coast-chess-2026-brevard-championship'
+          href: 'https://www.chessregister.com/register?event_key=4U_VMeUMl708rAQmRUFJa81V04Ucuw73-2nkGVypuPY%3D'
         },
         {
           label: 'View Participants',
-          href: 'https://www.chessregister.com/event/space-coast-chess-2026-brevard-championship/players'
+          href: 'https://www.chessregister.com/registrants?event_key=4U_VMeUMl708rAQmRUFJa81V04Ucuw73-2nkGVypuPY%3D'
         }
       ]
     }
@@ -353,7 +351,7 @@ export default class UpcomingEventsPageComponent {
     {
       title: '2026 Space Coast Open',
       date: 'April 24-26, 2026',
-      links: [{ label: 'Link to page', href: '/event/space-coast-open' }]
+      links: [{ label: 'Link to page', href: '/event/spacecoastopen' }]
     },
     {
       title: '2027 Space Coast Open',
@@ -369,7 +367,7 @@ export default class UpcomingEventsPageComponent {
     {
       title: '2026 Florida Championship',
       date: 'September 5-7, 2026',
-      links: [{ label: 'Link to page', href: '/event/florida-state-championship' }]
+      links: [{ label: 'Link to page', href: '/event/floridastatechampionship' }]
     }
   ];
 
@@ -415,7 +413,6 @@ export default class UpcomingEventsPageComponent {
   ];
 
   additionalInfoItems: string[] = [
-    'See the <a href="/event/event-rules" class="bold underline">Space Coast Chess Foundation (SCCF) Rules</a> for additional rules applicable to this event.',
     'No food or drink is permitted in the playing hall, except water or other beverages in tightly closed containers.',
     'Food is permitted in the skittles room, but all trash must be cleared afterward.',
     'Please do not crowd around posted pairings, standings, or other notices, or in areas used by the event.',
