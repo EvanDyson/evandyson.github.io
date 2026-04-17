@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterLink, RouterLinkActive, Router, NavigationEnd } from '@angular/router';
+import { inject } from '@angular/core';
+import { filter, map } from 'rxjs';
 
 interface NavItem {
   label: string;
@@ -10,7 +14,7 @@ interface NavItem {
 @Component({
   selector: 'sccf-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, MatIconModule],
   template: `
     <header class="navbar">
       <div class="navbar-brand fraunces italic">
@@ -49,10 +53,20 @@ interface NavItem {
           </ng-container>
         }
       </nav>
+      @if (this.url() !== '/') {
+        <span class="path fraunces">
+          <mat-icon>home</mat-icon>
+          {{ getPath() }}
+        </span>
+      }
       <hr class="line" />
     </header>
   `,
   styles: [`
+    .path {
+      text-align: left;
+    }
+
     .navbar {
       display: flex;
       flex-direction: column;
@@ -173,6 +187,15 @@ interface NavItem {
   `]
 })
 export class HeaderComponent {
+  route = inject(Router);
+  url = toSignal(
+    this.route.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+      map(() => this.route.url)
+    ),
+    { initialValue: this.route.url }
+  );
+
   menuOpen = false;
 
   closeMenu(): void {
@@ -217,4 +240,8 @@ export class HeaderComponent {
       ]
     }
   ];
+
+  getPath() {
+    return this.url();
+  }
 }
