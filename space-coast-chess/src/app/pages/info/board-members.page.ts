@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
+
 
 interface BoardMemberSection {
   name: string;
@@ -10,21 +13,15 @@ interface BoardMemberSection {
 
 @Component({
   standalone: true,
-  imports: [],
+  imports: [
+    MatSlideToggleModule,
+    FormsModule,
+  ],
   template: `
     <section class="contact-card">
       <div class="header-row">
         <h1 class="fraunces italic less-bold">Board Members</h1>
-
-        <label class="toggle-switch" for="bio-toggle">
-          <input
-            id="bio-toggle"
-            type="checkbox"
-            [checked]="showBios"
-            (change)="toggleBios()"
-          />
-          <span>Show Bios</span>
-        </label>
+        <mat-slide-toggle labelPosition="before" [(ngModel)]="showBios" class="toggle-switch">Show Bios</mat-slide-toggle>
       </div>
 
       <p class="intro top">

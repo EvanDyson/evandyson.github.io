@@ -53,13 +53,21 @@ import { RouterLink } from '@angular/router';
       >
         Events
       </a>
+      <a
+        routerLink="/events/upcoming-events"
+      >
+        Upcoming Events
+      </a>
+      <a
+        routerLink="/events/completed-events"
+      >
+        Completed Events
+      </a>
       <hr style="width: 30%;" />
       <span>TO DO</span>
       <hr style="width: 30%;" />
         <span>Space Coast Open</span>
         <span>Florida State Championship</span>
-        <span>Upcoming Events</span>
-        <span>Completed Events</span>
         <span>News & Blog</span>
       <hr style="width: 30%;" />
     </section>
