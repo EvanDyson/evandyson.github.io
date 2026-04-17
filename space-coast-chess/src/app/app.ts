@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TitleService } from './services/title.service';
 
 @Component({
   selector: 'sccf-root',
@@ -36,4 +37,8 @@ import { FooterComponent } from './components/footer/footer.component';
     }
   `]
 })
-export class App {}
+export class App {
+  constructor(private titleService: TitleService) {
+    this.titleService.setTitle();
+  }
+}
