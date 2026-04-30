@@ -48,7 +48,7 @@ interface ChessLocationSection {
           [class.reverse]="location.reverse"
         >
           @if (location.image) {
-            <div class="coach-media">
+            <div class="coach-media" [class.rsk-img]="location.name?.includes('RSK')" >
               <img [src]="location.image" [alt]="location.name" />
             </div>
           }
@@ -159,6 +159,10 @@ interface ChessLocationSection {
     .coach-media {
       flex: 0 0 34%;
       max-width: 34%;
+      &.rsk-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
     }
 
     .coach-media img {
@@ -246,6 +250,10 @@ interface ChessLocationSection {
         flex: none;
         max-width: 100%;
         width: 100%;
+        &.rsk-img {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
 
       .coach-name {
