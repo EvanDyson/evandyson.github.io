@@ -10,10 +10,11 @@ import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
   template: `
     <section class="finished-pages">
       <span>All pages are finished except...</span>
-      <hr style="width: 30%;" />
-        <span>Space Coast Open</span>
-        <span>Florida State Championship</span>
-      <hr style="width: 30%;" />
+      <hr style="width: 40%;" />
+        <span>Space Coast Open (Planning on waiting for this until the move over is ready)</span>
+        <span>Florida State Championship (Planning on waiting for this until the move over is ready)</span>
+        <span>All Blogs posts moved over, but format is not perfect. They still need a little more work.</span>
+      <hr style="width: 40%;" />
     </section>
 
     <section class="events-grid">
