@@ -380,16 +380,16 @@ export class HeaderComponent {
       ];
     }
 
-    if (url === '/news') {
+    if (url === '/blog') {
       return [
         { label: 'News & Blog' }
       ];
     }
 
-    if (url.startsWith('/news/')) {
-      const second = url.replace('/news/', '');
+    if (url.startsWith('/blog/')) {
+      const second = url.replace('/blog/', '');
       return [
-        { label: 'News & Blog', link: '/news' },
+        { label: 'News & Blog', link: '/blog' },
         { label: this.formatSlug(second) }
       ];
     }
@@ -449,7 +449,7 @@ export class HeaderComponent {
     },
     {
       label: 'News & Blog',
-      link: '/news'
+      link: '/blog'
     },
     {
       label: 'Contact & About',

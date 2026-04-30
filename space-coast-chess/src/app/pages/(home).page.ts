@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { injectContentFiles } from '@analogjs/content';
+import type { BlogPostAttributes } from '../blog/blog.model';
+import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
 
 @Component({
   standalone: true,
@@ -11,7 +14,6 @@ import { RouterLink } from '@angular/router';
         <span>Space Coast Open</span>
         <span>Florida State Championship</span>
         <span>News & Blog</span>
-        <span>All Blog Posts (77/77)</span>
       <hr style="width: 30%;" />
     </section>
 
@@ -27,14 +29,16 @@ import { RouterLink } from '@angular/router';
     <section class="blog-section">
       <h2>Recent News & Blog Posts</h2>
       <div class="blog-grid">
-        @for (post of blogPosts; track post) {
-          <a [routerLink]="post.link" class="blog-card">
-            <span class="category">{{ post.category }}</span>
+        @for (post of blogPosts(); track post.slug) {
+          <a [routerLink]="['/blog', post.slug]" class="blog-card">
+            @if (post.category) {
+              <span class="category">{{ post.category }}</span>
+            }
             <h3>{{ post.title }}</h3>
           </a>
         }
       </div>
-      <a routerLink="/news" class="view-all">View All Posts →</a>
+      <a routerLink="/blog" class="view-all">View All Posts &rarr;</a>
     </section>
   `,
   styles: [`
@@ -157,31 +161,7 @@ export default class HomePageComponent {
     }
   ];
 
-  blogPosts = [
-    {
-      title: 'Blog Entry Quick Access Index',
-      category: 'General',
-      link: '/news'
-    },
-    {
-      title: '2025 Turkey Bash! @ Frank T. Forester Recreation Center — Nov 8th 2025',
-      category: 'Monthly Tournament Series',
-      link: '/news'
-    },
-    {
-      title: '2025 Brouhaha! @ Frank T. Forester Recreation Center — Oct 4th 2025',
-      category: 'Monthly Tournament Series',
-      link: '/news'
-    },
-    {
-      title: '2025 Fall Fracas! @ Frank T. Forester Recreation Center — Sep 13th 2025',
-      category: 'Monthly Tournament Series',
-      link: '/news'
-    },
-    {
-      title: '2025 Harvest Challenge! @ Frank T. Forester Recreation Center — Aug 9th 2025',
-      category: 'Monthly Tournament Series',
-      link: '/news'
-    }
-  ];
+  private readonly contentFiles = injectContentFiles<BlogPostAttributes>(isBlogContentFile);
+
+  readonly blogPosts = computed(() => getBlogPostSummaries(this.contentFiles).slice(0, 5));
 }
