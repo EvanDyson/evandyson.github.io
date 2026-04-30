@@ -163,5 +163,5 @@ export default class HomePageComponent {
 
   private readonly contentFiles = injectContentFiles<BlogPostAttributes>(isBlogContentFile);
 
-  readonly blogPosts = computed(() => getBlogPostSummaries(this.contentFiles).slice(0, 5));
+  readonly blogPosts = computed(() => getBlogPostSummaries(this.contentFiles).slice(0, 6));
 }
