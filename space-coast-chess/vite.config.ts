@@ -33,6 +33,13 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: ['es2020'],
   },
+  environments: {
+    ssr: {
+      build: {
+        copyPublicDir: false,
+      },
+    },
+  },
   resolve: {
     mainFields: ['module'],
   },
