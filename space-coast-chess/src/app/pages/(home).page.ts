@@ -1,5 +1,5 @@
-import { Component, computed } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, HostListener, inject, computed } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { injectContentFiles } from '@analogjs/content';
 import type { BlogPostAttributes } from '../blog/blog.model';
 import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
@@ -20,7 +20,7 @@ import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
     <section class="events-grid">
       @for (card of eventCards; track card) {
         <a [routerLink]="card.link" class="event-card">
-          <img [src]="card.image" [alt]="card.alt" />
+          <img [src]="card.image" [alt]="card.alt" [class.camp]="card.title.includes('Summer Chess Camp')" />
           <p>{{ card.title }}</p>
         </a>
       }
@@ -42,6 +42,10 @@ import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
     </section>
   `,
   styles: [`
+    .camp {
+      object-position: center 30%;
+    }
+
     .finished-pages {
       display: flex;
       flex-direction: column;
@@ -134,6 +138,34 @@ import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
   `]
 })
 export default class HomePageComponent {
+  private readonly router = inject(Router);
+  private typedBuffer = '';
+
+  @HostListener('window:keydown', ['$event'])
+  protected handleSecretChessCode(event: KeyboardEvent): void {
+    const target = event.target as HTMLElement | null;
+    const isTypingField =
+      target?.tagName === 'INPUT' ||
+      target?.tagName === 'TEXTAREA' ||
+      target?.tagName === 'SELECT' ||
+      target?.isContentEditable;
+
+    if (isTypingField || event.ctrlKey || event.metaKey || event.altKey) {
+      return;
+    }
+
+    if ((event.view?.innerWidth ?? 0) < 900 || event.key.length !== 1) {
+      return;
+    }
+
+    this.typedBuffer = `${this.typedBuffer}${event.key.toLowerCase()}`.slice(-5);
+
+    if (this.typedBuffer === 'chess') {
+      this.typedBuffer = '';
+      this.router.navigateByUrl('/en-passant');
+    }
+  }
+
   eventCards = [
     {
       image: '/images/home-page/space-coast-open.jpg',
