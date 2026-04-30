@@ -13,7 +13,6 @@ import { getBlogPostSummaries, isBlogContentFile } from '../blog/blog.utils';
       <hr style="width: 30%;" />
         <span>Space Coast Open</span>
         <span>Florida State Championship</span>
-        <span>News & Blog</span>
       <hr style="width: 30%;" />
     </section>
 
