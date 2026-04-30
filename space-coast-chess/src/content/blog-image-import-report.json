@@ -1,0 +1,834 @@
+{
+  "postsChecked": 91,
+  "imagesFound": 0,
+  "imagesDownloaded": 0,
+  "imagesReused": 0,
+  "imageUrlsRewritten": 0,
+  "failures": [],
+  "verification": {
+    "remainingRemote": [],
+    "missingLocal": [],
+    "crossPostReferences": []
+  },
+  "posts": [
+    {
+      "slug": "1st-brilliancy-prize-corey-acor-vs-julio-becerra",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2017-space-coast-open-april-28-30-2017-tony-burrus",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2023-fall-fracas-monthly-spacecoast-chess-memorable-snaps",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2023-space-coast-open-info",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2024-alex-zelner-memorial-29th-space-coast-open-chess-festival-info",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2025-brouhaha-frank-t-forester-recreation-center-960-cogswell-st-rockledge-fl-32955-on-oct",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2025-fall-fracas-frank-t-forester-recreation-center-960-cogswell-st-rockledge-fl-32955-on-",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2025-harvest-challenge-frank-t-forester-recreation-center-960-cogswell-st-rockledge-fl-329",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2025-turkey-bash-frank-t-forester-recreation-center-960-cogswell-st-rockledge-fl-32955-on-",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2026-brevard-championship",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2026-chess-carnival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2026-city-classic",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "24th-space-coast-open-final-standings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "27th-annual-space-coast-chess-festival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "28th-space-coast-open-final-standings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "28th-space-coast-open-in-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "28th-space-coast-open-notable-games",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-final-standings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-in-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-intro-letter",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-schedule-of-activities",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-sponsors",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "29th-space-coast-open-wgm-sabina-foisor-video-commentary",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "2nd-brilliancy-prize-yan-miellier-vs-timur-gareyev",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-during-round-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-blitz-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-event-flyer",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-final-standings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-games",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-introductory-letter",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-miscellaneous-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-schedule-of-activities",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-sponsors",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-table-of-contents",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "30th-space-coast-open-winners",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31sco",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-blitz-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-event-flyer",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-final-standings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-info",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-miscellaneous-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-round-by-round-standings-and-pairings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-round-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-sponsors",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31st-space-coast-open-welcome-letter",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "31th-space-coast-open-schedule-of-activities",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "3rd-brilliancy-prize-camille-sibbitt-vs-justin-almazan",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "alex-zelner-memorial-29th-space-coast-open-event-flyer",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "alex-zelner-memorial-29th-space-coast-open-table-of-contents",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "alex-zelner-memorial",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "archive-of-broadcast-commentary-by-wgm-sabina-foisor",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "blog-entry-quick-access-index",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "completed-event-25th-space-coast-open-chess-festival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "completed-event-26th-space-coast-open-chess-festival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "completed-event-27th-space-coast-open-chess-festival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "east-side-story-the-alex-zelner-memorial-29th-space-coast-open-has-a-successful-run",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "final-standings-for-the-25th-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "final-standings-for-the-26th-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "final-standings-for-the-27th-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "games-from-the-25th-space-coast-open-april-27-29-2018",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "games-from-the-26th-space-coast-open-april-26-28-2019",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "games-from-the-27th-space-coast-open-april-22-24-2022",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "games-from-the-29th-space-coast-open-may-3-5-2024",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "kids-summer-chess-camp-6-11-6-15",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "kids-summer-chess-camp-7-14-7-18",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "massive-tie-at-30th-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "monthly-scholastic-open-tournament-starting-august-27th",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "past-space-coast-open-champions",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "publishing-games-with-game-viewer-to-web-site-using-chessbase-14",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "reports-and-standings-from-the-24th-space-coast-open-april-28-30-2017",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "round-by-round-standings-and-pairings",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "sccf-awarded-silver-seal-of-transparency-rated-in-top-2-of-non-profits-for-transparency-by",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "scholastic-chess-returning-to-brevard-county",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "sofia-brings-fighting-chess-to-the-beach-for-the-25th-anniversary-edition-of-the-space-coa",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2023-brouhaha-oct-28-2023-open-winners-with-td-steve",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2023-turkey-bash",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2024-blizzard-bowl-event-photos",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2024-brevard-championship",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2024-chess-carnival",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2025-blizzard-bowl-date-jan-11th-2025-photos-at-new-venue-frank-t-forest",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2025-brevard-classic-frank-t-forester-recreation-center-960-cogswell-st-",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-2025-summer-challenge-frank-t-forester-recreation-center-960-cogswell-st",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-chess-blizzard-bowl-prizes-frank-t-forester-recreation-center-960-cogswell-st-",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "space-coast-open-info",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "the-27th-space-coast-open-in-pictures",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "tournament-report-27th-space-coast-open-april-22-24-2022-timur-gareyev-repeats-in-style",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "tournament-report-for-the-28th-space-coast-open-may-19-21-2013",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "tournament-report-sofia-brings-fighting-chess-to-the-beach-for-the-25th-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "tournament-report-ukrainian-takes-over-space-coast-open-complete-updated-report",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "ukrainian-takes-over-space-coast-open",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    },
+    {
+      "slug": "who-needs-a-chess-board-anyway-a-report-on-the-24th-space-coast-open-peter-dyson",
+      "found": 0,
+      "downloaded": 0,
+      "reused": 0,
+      "rewritten": 0,
+      "mappings": [],
+      "failures": []
+    }
+  ]
+}
